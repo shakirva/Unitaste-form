@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer Registration Form - Unitaste</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Logo -->
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo-unitaste.png" alt="Unitaste Logo" class="logo-image" style="width: fit-content;">
+              
+                </div>
+                <p class="tagline">Premium Food Supplier & Distribution</p>
+            </div>
+        </header>
+
+        <!-- Main Form -->
+        <main class="form-container">
+            <div class="form-header">
+                <h1><i class="fas fa-clipboard-list"></i>  Dealer Benefit Scheme 2025 Form</h1>
+                <p>Please fill in all the details to register for the Dealer Benefit Scheme 2025</p>
+            </div>
+
+            <form id="shopForm" class="shop-form">
+                <div class="form-group">
+                    <label for="shopName">
+                        <i class="fas fa-store-alt"></i>
+                        Shop Name
+                    </label>
+                    <input type="text" id="shopName" name="shopName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Location
+                    </label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">
+                        <i class="fas fa-phone"></i>
+                        Phone Number
+                    </label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="district">
+                        <i class="fas fa-city"></i>
+                        District
+                    </label>
+                    <select id="district" name="district" required>
+                        <option value="">Select District</option>
+                        <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                        <option value="Kollam">Kollam</option>
+                        <option value="Pathanamthitta">Pathanamthitta</option>
+                        <option value="Alappuzha">Alappuzha</option>
+                        <option value="Kottayam">Kottayam</option>
+                        <option value="Idukki">Idukki</option>
+                        <option value="Ernakulam">Ernakulam</option>
+                        <option value="Thrissur">Thrissur</option>
+                        <option value="Palakkad">Palakkad</option>
+                        <option value="Malappuram">Malappuram</option>
+                        <option value="Kozhikode">Kozhikode</option>
+                        <option value="Wayanad">Wayanad</option>
+                        <option value="Kannur">Kannur</option>
+                        <option value="Kasaragod">Kasaragod</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cardNo">
+                        <i class="fas fa-credit-card"></i>
+                        Card No
+                    </label>
+                    <input type="text" id="cardNo" name="cardNo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="distributor">
+                        <i class="fas fa-truck"></i>
+                        Distributor
+                    </label>
+                    <input type="text" id="distributor" name="distributor" required>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Submit Registration
+                </button>
+            </form>
+
+            <!-- Success Message -->
+            <div id="successMessage" class="success-message" style="display: none;">
+                <i class="fas fa-check-circle"></i>
+                <h3>Registration Successful!</h3>
+                <p>Your dealer registration has been submitted successfully. You will receive a confirmation email shortly.</p>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+                <div class="spinner"></div>
+                <p>Submitting your registration...</p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

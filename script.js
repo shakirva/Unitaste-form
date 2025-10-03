@@ -1,4 +1,7 @@
-// EmailJS Configuration - Working Settings
+// Microsoft Forms URL for dealer registration
+const MICROSOFT_FORMS_URL = 'https://forms.office.com/r/gVT3EKcCJK';
+
+// EmailJS Configuration - Working Settings (keeping for backup)
 const EMAIL_CONFIG = {
     PUBLIC_KEY: 'BlrAV0JxNBOHc8CWp', // Your working EmailJS public key
     SERVICE_ID: 'service_7z18alz', // Your actual service ID
